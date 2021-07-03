@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_case"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="2021-06-25"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_confirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Terkonfirmasi"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_item_date"/>
+
+        <TextView
+            android:id="@+id/title_recover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Sembuh"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/title_confirmed"
+            app:layout_constraintTop_toBottomOf="@id/title_confirmed"/>
+
+        <TextView
+            android:id="@+id/title_passed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Meninggal"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_recover"
+            app:layout_constraintStart_toStartOf="@id/title_recover"/>
+
+        <TextView
+            android:id="@+id/tv_item_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="84 Kasus"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/title_recover"
+            app:layout_constraintTop_toTopOf="@id/title_recover"/>
+
+        <TextView
+            android:id="@+id/tv_item_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="1304 Kasus"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/title_confirmed"
+            app:layout_constraintTop_toTopOf="@id/title_confirmed"/>
+
+        <TextView
+            android:id="@+id/tv_item_passed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="84 Kasus"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/title_passed"
+            app:layout_constraintTop_toTopOf="@id/title_passed"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
